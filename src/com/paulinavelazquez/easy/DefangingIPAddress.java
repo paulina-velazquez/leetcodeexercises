@@ -7,13 +7,11 @@ public class DefangingIPAddress {
     }
 
     private static void defangingAddressFirst(String address) {
-        System.out.println("First Method: \nAddress before: " + address);
         address = address.replace(".", "[.]");
         System.out.println("Address after: " + address);
     }
 
     public static void defangingAddressSecond(String address) {
-        System.out.println("Second Method: \nAddress before: " + address);
         String newAddress = "";
         for (int i = 0; i < address.length(); i++) {
             if (address.charAt(i) == '.') {
